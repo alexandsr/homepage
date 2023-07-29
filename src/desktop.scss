@@ -25,7 +25,7 @@
       $predefinedShadows: (
           0 0 5px rgba($primaryshadowcolour, .05), 
           -1px 0 3px rgba($primaryshadowcolour, .2), 
-          3px 1px 5px rgba($primaryshadowcolour, .2));
+          3px 0px 5px rgba($primaryshadowcolour, .2));
       $value: ();
       @for $i from 1 through $depth {
           $num: $i + px;
@@ -37,22 +37,23 @@
           } @else if($lighting == $LIGHTING_FLAT) {
           $hueadjust: -$depth * 1%;
           }
+          $numSmall: $i * -0.333 + px;
           $colour: adjust-color($primary, $lightness: $hueadjust);
-          $theShadow: 0 $num 0 $colour;
+          $theShadow: $num $numSmall 0 $colour;
           $value: append($value, $theShadow, comma);
       }
       
       @for $i from 1 through $shadowsteps {
           @if($i >= length($predefinedShadows)) {
           $dist: $i * $shadowincrementer;
-          $value: append($value, 0 $dist $dist rgba($primaryshadowcolour, $shadowopacity));
+          $value: append($value, $dist 0 $dist rgba($primaryshadowcolour, $shadowopacity));
           } @else {
           $value: append($value, nth($predefinedShadows, $i));
           }
       }
       text-shadow: $value;
   }
-  $primarycolour: darkslategrey;
+  $primarycolour: #1F3943;
 
     body {
         height: 100vh;
@@ -60,7 +61,7 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        background-color: darkslategrey;
+        background-color: #1F3943;
       }
       .line {
         width: 100vw;
@@ -70,7 +71,7 @@
         display: inline-block;
       }
       .right {
-        color: darkslategrey;
+        color: #1F3943;
         transform: skew(0deg, 22deg);
         @include text3d(
           adjust-color($primarycolour, $lightness: -8%), 
@@ -100,6 +101,18 @@
         text-transform: uppercase;
         transition: ease-out .6s;
         font-weight: 900;
-
+      }
+      .iconsContainer {
+        display: flex;
+        position: absolute;
+        bottom: 6vw;
+        left: 3vw;
+        width: 20vw;
+        height: 3vw;
+      }
+      svg {
+        width: 3vw;
+        height: 3vw;
+        margin: 3vw;
       }
 }

@@ -1,0 +1,59 @@
+$primarycolour: #1F3943;
+    $LIGHTING_FLOOR: 1;
+    $LIGHTING_CEIL: 2;
+    $LIGHTING_FLAT: 3;
+@mixin text4d(
+    $primary, 
+    $depth: 5, 
+    $shadowsteps: 5, 
+    $shadowincrementer: 3px, 
+    $shadowopacity: .5, 
+    $primaryshadowcolour: #000, 
+    $lighting: $LIGHTING_CEIL
+) {
+    $predefinedShadows: (
+        drop-shadow(0 0 5px rgba($primaryshadowcolour, .05)), 
+        drop-shadow(0 -1px 3px rgba($primaryshadowcolour, .2)), 
+        drop-shadow(0 3px 5px rgba($primaryshadowcolour, .2)));
+    $value: ();
+    @for $i from 1 through $depth {
+        $num: $i + px;
+        $hueadjust: $i;
+        @if($lighting == $LIGHTING_FLOOR) {
+        $hueadjust: ($i * 2 - $depth - 5) * 1%;
+        } @else if($lighting == $LIGHTING_CEIL) {
+        $hueadjust: -($i*2 + $depth - 10) * 1%;
+        } @else if($lighting == $LIGHTING_FLAT) {
+        $hueadjust: -$depth * 1%;
+        }
+        $colour: adjust-color($primary, $lightness: $hueadjust);
+        $theShadow: drop-shadow(0 $num 0 $colour);
+
+        $value: append($value, $theShadow, auto);
+    }
+    
+    @for $i from 1 through $shadowsteps {
+        @if($i >= length($predefinedShadows)) {
+        $dist: $i * $shadowincrementer;
+        $value: append($value, drop-shadow(0 $dist $dist rgba($primaryshadowcolour, $shadowopacity)));
+        } @else {
+        $value: append($value, nth($predefinedShadows, $i));
+        }
+    }
+    filter: $value;
+}
+svg {
+    margin: 2vw;
+    color: #1F3943;
+    transition: ease-out .6s;
+    
+    @include text4d(
+      adjust-color($primarycolour, $lightness: -8%), 
+      $depth: 3, 
+      $primaryshadowcolour: adjust-color($primarycolour, $lightness: -10%, $saturation: +20%),
+      $shadowopacity: .3
+  );
+  }
+  svg:hover {
+    color: white;
+  }

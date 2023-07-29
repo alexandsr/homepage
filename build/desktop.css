@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: darkslategrey;
+    background-color: #1F3943;
   }
   .line {
     width: 100vw;
@@ -27,9 +27,9 @@
     display: inline-block;
   }
   .right {
-    color: darkslategrey;
+    color: #1F3943;
     transform: skew(0deg, 22deg);
-    text-shadow: 1px 0 0 #203535, 0 2px 0 #1c2f2f, 0 3px 0 #182929, 0 4px 0 #142222, 0 5px 0 #111c1c, 0 6px 0 #0d1515, 0 7px 0 #090f0f, 0 8px 0 #050909, 0 0 5px rgba(20, 55, 55, 0.05), -1px 0 3px rgba(20, 55, 55, 0.2), 0 9px 9px rgba(20, 55, 55, 0.3), 0 12px 12px rgba(20, 55, 55, 0.3), 0 15px 15px rgba(20, 55, 55, 0.3);
+    text-shadow: 1px -0.333px 0 #122127, 2px -0.666px 0 #0f1b20, 3px -0.999px 0 #0c1519, 4px -1.332px 0 #080f12, 5px -1.665px 0 #050a0b, 6px -1.998px 0 #020404, 7px -2.331px 0 black, 8px -2.664px 0 black, 0 0 5px rgba(10, 29, 37, 0.05), -1px 0 3px rgba(10, 29, 37, 0.2), 9px 0 9px rgba(10, 29, 37, 0.3), 12px 0 12px rgba(10, 29, 37, 0.3), 15px 0 15px rgba(10, 29, 37, 0.3);
   }
   .left .content {
     width: 100vw;
@@ -51,6 +51,19 @@
     text-transform: uppercase;
     transition: ease-out 0.6s;
     font-weight: 900;
+  }
+  .iconsContainer {
+    display: flex;
+    position: absolute;
+    bottom: 6vw;
+    left: 3vw;
+    width: 20vw;
+    height: 3vw;
+  }
+  svg {
+    width: 3vw;
+    height: 3vw;
+    margin: 3vw;
   }
 }
 
