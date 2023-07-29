@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 768px) {
+    @font-face {
+        font-family: 'Sirin Stencil';
+        font-style: sans-serif;
+        font-weight: 400;
+        src: url(assets/sirin_stencil.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      .line {
+        width: 100vw;
+      }
+      .right {
+        width: 100vw;
+        overflow: hidden;
+        display: inline-block;
+      }
+      .right {
+        color: darkslategrey;
+        transform: skew(0deg, 22deg);
+      }
+      .left .content {
+        width: 100vw;
+        text-align: center;
+      }
+      .right .content {
+        width: 100vw;
+        text-align: center;
+        transform: translate(25vw);
+      }
+      .wrap {
+        transform: translate(0vw, -20vh);
+      }
+      span {
+        display: inline-block;
+        font-family: 'Sirin Stencil', sans-serif;
+        font-size: 10vw;
+        line-height: .8;
+        text-transform: uppercase;
+        transition: ease-out .6s;
+        font-weight: 900;
+      }
+    
+}
