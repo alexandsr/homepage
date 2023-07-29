@@ -20,13 +20,13 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     let speedMed = 175 * normalizedPosition;
     let speedFast = 250 * normalizedPosition;
     spansSlow.forEach((span) => {
-      (span as HTMLElement).style.transform = `translate(${speedSlow}px)`;
+      span.style.transform = `translate(${speedSlow}px)`;
     });
     spansMed.forEach((span) => {
-      (span as HTMLElement).style.transform = `translate(${speedMed}px)`
+      span.style.transform = `translate(${speedMed}px)`
     });
     spansFast.forEach((span) => {
-      (span as HTMLElement).style.transform = `translate(${speedFast}px)`
+      span.style.transform = `translate(${speedFast}px)`
     });
   }
   //we need to recalculate width when the window is resized
