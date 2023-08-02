@@ -1,6 +1,6 @@
 svg {
   margin: 2vw;
-  color: rgba(32, 58, 67, 0);
+  color: #1F3943;
   transition: ease-out 0.6s;
   filter: drop-shadow(0 1px 0 #1a3039) drop-shadow(0 2px 0 #172a32) drop-shadow(0 3px 0 #14242b) drop-shadow(0 0 5px rgba(10, 29, 37, 0.05)) drop-shadow(0 -1px 3px rgba(10, 29, 37, 0.2)) drop-shadow(0 9px 9px rgba(10, 29, 37, 0.3)) drop-shadow(0 12px 12px rgba(10, 29, 37, 0.3)) drop-shadow(0 15px 15px rgba(10, 29, 37, 0.3));
 }

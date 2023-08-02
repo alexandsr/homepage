@@ -64,8 +64,7 @@
     $primarycolour: #1F3943;
 
     body {
-        background: rgba(32, 58, 67, 1.0);
-        background: radial-gradient(at left bottom, rgba(39, 74, 84, 1.0), rgba(32, 58, 67, 0.0));
+        background: $primarycolour;
     }
     span {
         display: inline-block;
@@ -74,7 +73,7 @@
         line-height: .8;
         transition: ease-out .6s;
         font-weight: bold;
-        color: rgba(31, 57, 67, 0);
+        color: #1F3943;
         @include text3d(
             adjust-color($primarycolour, $lightness: -8%), 
             $depth: 8, 

@@ -18,8 +18,7 @@
     margin-top: 10vh;
   }
   body {
-    background: rgb(32, 58, 67);
-    background: radial-gradient(at left bottom, rgb(39, 74, 84), rgba(32, 58, 67, 0));
+    background: #1F3943;
   }
   span {
     display: inline-block;
@@ -28,7 +27,7 @@
     line-height: 0.8;
     transition: ease-out 0.6s;
     font-weight: bold;
-    color: rgba(31, 57, 67, 0);
+    color: #1F3943;
     text-shadow: 0 1px 0 #122127, 0 2px 0 #0f1b20, 0 3px 0 #0c1519, 0 4px 0 #080f12, 0 5px 0 #050a0b, 0 6px 0 #020404, 0 7px 0 black, 0 8px 0 black, 0 0 5px rgba(10, 29, 37, 0.05), 0 -1px 3px rgba(10, 29, 37, 0.2), 0 9px 9px rgba(10, 29, 37, 0.3), 0 12px 12px rgba(10, 29, 37, 0.3), 0 15px 15px rgba(10, 29, 37, 0.3);
   }
   .iconsContainer {
