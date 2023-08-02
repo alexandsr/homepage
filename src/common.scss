@@ -44,7 +44,7 @@ $primarycolour: #1F3943;
 }
 svg {
     margin: 2vw;
-    color: #1F3943;
+    color: rgba(32, 58, 67, 0);
     transition: ease-out .6s;
     
     @include text4d(

@@ -17,7 +17,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #1F3943;
+    background: rgb(32, 58, 67);
+    background: radial-gradient(at left bottom, rgb(39, 74, 84), rgba(32, 58, 67, 0));
   }
   .line {
     width: 100vw;
@@ -27,7 +28,7 @@
     display: inline-block;
   }
   .right {
-    color: #1F3943;
+    color: rgba(31, 57, 67, 0);
     transform: skew(0deg, 22deg);
     text-shadow: 1px -0.333px 0 #122127, 2px -0.666px 0 #0f1b20, 3px -0.999px 0 #0c1519, 4px -1.332px 0 #080f12, 5px -1.665px 0 #050a0b, 6px -1.998px 0 #020404, 7px -2.331px 0 black, 8px -2.664px 0 black, 0 0 5px rgba(10, 29, 37, 0.05), -1px 0 3px rgba(10, 29, 37, 0.2), 9px 0 9px rgba(10, 29, 37, 0.3), 12px 0 12px rgba(10, 29, 37, 0.3), 15px 0 15px rgba(10, 29, 37, 0.3);
   }
