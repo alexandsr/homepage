@@ -7,7 +7,7 @@ $primarycolour: #fff;
     $depth: 5, 
     $shadowsteps: 5, 
     $shadowincrementer: 3px, 
-    $shadowopacity: .5, 
+    $shadowopacity: .9, 
     $primaryshadowcolour: #000, 
     $lighting: $LIGHTING_CEIL
 ) {
@@ -26,8 +26,9 @@ $primarycolour: #fff;
         } @else if($lighting == $LIGHTING_FLAT) {
         $hueadjust: -$depth * 1%;
         }
+        $numSmall: $i * 0 + px;
         $colour: adjust-color($primary, $lightness: $hueadjust);
-        $theShadow: drop-shadow(0 $num 0 $colour);
+        $theShadow: drop-shadow(0 $num $numSmall $colour);
 
         $value: append($value, $theShadow, auto);
     }
