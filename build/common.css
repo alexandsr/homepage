@@ -2,7 +2,7 @@ svg {
   margin: 2vw;
   color: #fff;
   transition: ease-out 0.6s;
-  filter: drop-shadow(0 1px 0 #ebebeb) drop-shadow(0 2px 0 #e6e6e6) drop-shadow(0 3px 0 #e0e0e0) drop-shadow(0 4px 0 #dbdbdb) drop-shadow(0 5px 0 #d6d6d6) drop-shadow(0 6px 0 #d1d1d1) drop-shadow(0 7px 0 #cccccc) drop-shadow(0 8px 0 #c7c7c7) drop-shadow(0 0 5px rgba(214, 194, 194, 0.05)) drop-shadow(0 -1px 3px rgba(214, 194, 194, 0.2)) drop-shadow(0 9px 9px #d6c2c2) drop-shadow(0 12px 12px #d6c2c2) drop-shadow(0 15px 15px #d6c2c2);
+  filter: drop-shadow(0 1px 0 #ebebeb) drop-shadow(0 2px 0 #e6e6e6) drop-shadow(0 3px 0 #e0e0e0) drop-shadow(0 4px 0 #dbdbdb) drop-shadow(0 5px 0 #d6d6d6) drop-shadow(0 6px 0 #d1d1d1) drop-shadow(0 7px 0 #cccccc) drop-shadow(0 8px 0 #c7c7c7) drop-shadow(0 0 5px rgba(230, 230, 230, 0.05)) drop-shadow(0 -1px 3px rgba(230, 230, 230, 0.2)) drop-shadow(0 9px 9px rgba(230, 230, 230, 0.7)) drop-shadow(0 12px 12px rgba(230, 230, 230, 0.7)) drop-shadow(0 15px 15px rgba(230, 230, 230, 0.7));
 }
 
 svg:hover {
