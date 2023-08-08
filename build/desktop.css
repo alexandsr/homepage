@@ -29,7 +29,7 @@
   .right {
     color: #fff;
     transform: skew(0deg, 22deg);
-    text-shadow: 1px -0.333px 0 #ebebeb, 2px -0.666px 0 #e6e6e6, 3px -0.999px 0 #e0e0e0, 4px -1.332px 0 #dbdbdb, 5px -1.665px 0 #d6d6d6, 6px -1.998px 0 #d1d1d1, 7px -2.331px 0 #cccccc, 8px -2.664px 0 #c7c7c7, 0 0 5px rgba(235, 224, 224, 0.05), -1px 0 3px rgba(235, 224, 224, 0.2), 9px 0 9px rgba(235, 224, 224, 0.3), 12px 0 12px rgba(235, 224, 224, 0.3), 15px 0 15px rgba(235, 224, 224, 0.3);
+    text-shadow: 1px -0.333px 0 #ebebeb, 2px -0.666px 0 #e6e6e6, 3px -0.999px 0 #e0e0e0, 4px -1.332px 0 #dbdbdb, 5px -1.665px 0 #d6d6d6, 6px -1.998px 0 #d1d1d1, 7px -2.331px 0 #cccccc, 8px -2.664px 0 #c7c7c7, 0 0 5px rgba(235, 224, 224, 0.05), -1px 0 3px rgba(235, 224, 224, 0.2), 9px 0 9px rgba(235, 224, 224, 0.6), 12px 0 12px rgba(235, 224, 224, 0.6), 15px 0 15px rgba(235, 224, 224, 0.6);
   }
   .left .content {
     width: 100vw;
