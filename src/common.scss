@@ -46,7 +46,7 @@ $primarycolour: #fff;
 svg {
     margin: 2vw;
     color: #fff;
-    transition: ease-out .6s;
+    transition: ease-out .2s;
     
     @include text4d(
         adjust-color($primarycolour, $lightness: -8%), 
