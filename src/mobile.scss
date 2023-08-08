@@ -76,9 +76,9 @@
         color: #fff;
         @include text3d(
             adjust-color($primarycolour, $lightness: -8%), 
-            $depth: 8, 
+            $depth: 10, 
             $primaryshadowcolour: adjust-color($primarycolour, $lightness: -10%, $saturation: +0%),
-            $shadowopacity: 0.7
+            $shadowopacity: 0.8
         );
     }
     .iconsContainer {

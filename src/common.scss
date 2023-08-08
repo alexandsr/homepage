@@ -49,9 +49,9 @@ svg {
     
     @include text4d(
         adjust-color($primarycolour, $lightness: -8%), 
-        $depth: 4, 
+        $depth: 6, 
         $primaryshadowcolour: adjust-color($primarycolour, $lightness: -10%, $saturation: +0%),
-        $shadowopacity: 0.7
+        $shadowopacity: 0.8
   );
   }
   svg:hover {
