@@ -2,11 +2,11 @@ svg {
   margin: 2vw;
   color: #fff;
   transition: ease-out 0.6s;
-  filter: drop-shadow(0 1px 0 whitesmoke) drop-shadow(0 2px 0 #f0f0f0) drop-shadow(0 3px 0 #ebebeb) drop-shadow(0 4px 0 #e6e6e6) drop-shadow(0 0 5px rgba(230, 230, 230, 0.05)) drop-shadow(0 -1px 3px rgba(230, 230, 230, 0.2)) drop-shadow(0 9px 9px rgba(230, 230, 230, 0.8)) drop-shadow(0 12px 12px rgba(230, 230, 230, 0.8)) drop-shadow(0 15px 15px rgba(230, 230, 230, 0.8));
+  filter: drop-shadow(0 1px 0 #f7f7f7) drop-shadow(0 2px 0 #f2f2f2) drop-shadow(0 3px 0 #ededed) drop-shadow(0 0 5px rgba(230, 230, 230, 0.05)) drop-shadow(0 -1px 3px rgba(230, 230, 230, 0.2)) drop-shadow(0 9px 9px rgba(230, 230, 230, 0.8)) drop-shadow(0 12px 12px rgba(230, 230, 230, 0.8)) drop-shadow(0 15px 15px rgba(230, 230, 230, 0.8));
 }
 
 svg:hover {
-  color: #000;
+  color: #d5d5d5;
 }
 
 /*# sourceMappingURL=common.css.map */
