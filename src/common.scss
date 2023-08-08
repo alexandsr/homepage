@@ -49,7 +49,7 @@ svg {
     
     @include text4d(
         adjust-color($primarycolour, $lightness: -8%), 
-        $depth: 6, 
+        $depth: 4, 
         $primaryshadowcolour: adjust-color($primarycolour, $lightness: -10%, $saturation: +0%),
         $shadowopacity: 0.8
   );
