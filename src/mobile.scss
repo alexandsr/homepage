@@ -76,7 +76,7 @@
         color: #fff;
         @include text3d(
             adjust-color($primarycolour, $lightness: -8%), 
-            $depth: 12, 
+            $depth: 8, 
             $primaryshadowcolour: adjust-color($primarycolour, $lightness: -10%, $saturation: +0%),
             $shadowopacity: 0.7
         );
