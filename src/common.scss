@@ -51,7 +51,7 @@ svg {
         adjust-color($primarycolour, $lightness: -8%), 
         $depth: 5, 
         $primaryshadowcolour: adjust-color($primarycolour, $lightness: -10%, $saturation: +0%),
-        $shadowopacity: 0.8
+        $shadowopacity: 1
   );
   }
   svg:hover {
