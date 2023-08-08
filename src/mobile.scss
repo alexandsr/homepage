@@ -61,7 +61,7 @@
         text-shadow: $value;
     }
 
-    $primarycolour: #1F3943;
+    $primarycolour: #fff;
 
     body {
         background: $primarycolour;
@@ -73,7 +73,7 @@
         line-height: .8;
         transition: ease-out .6s;
         font-weight: bold;
-        color: #1F3943;
+        color: #fff;
         @include text3d(
             adjust-color($primarycolour, $lightness: -8%), 
             $depth: 8, 

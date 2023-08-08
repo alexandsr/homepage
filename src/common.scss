@@ -1,4 +1,4 @@
-$primarycolour: #1F3943;
+$primarycolour: #fff;
     $LIGHTING_FLOOR: 1;
     $LIGHTING_CEIL: 2;
     $LIGHTING_FLAT: 3;
@@ -44,7 +44,7 @@ $primarycolour: #1F3943;
 }
 svg {
     margin: 2vw;
-    color: #1F3943;
+    color: #fff;
     transition: ease-out .6s;
     
     @include text4d(
@@ -55,5 +55,5 @@ svg {
   );
   }
   svg:hover {
-    color: white;
+    color: #000;
   }
