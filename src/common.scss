@@ -1,3 +1,6 @@
+body * {
+    z-index: 0;
+}
 $primarycolour: #fff;
     $LIGHTING_FLOOR: 1;
     $LIGHTING_CEIL: 2;
@@ -57,4 +60,46 @@ svg {
   }
   svg:hover {
     color: #efefef;
+}
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+
+}
+#whiteOverlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+    z-index: 50;
+    transition: ease-in-out 0.3s;
+}
+#copiedText {
+    position: relative;
+    left: -100vw;
+    z-index: 51;
+    top: 40%;
+    color: #efefef;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 10vh;
+    transition: ease-out 0.25s;
+
+}
+
+#overlay > * {
+    pointer-events: none;
   }
+
+#email {
+    cursor: pointer;
+}
