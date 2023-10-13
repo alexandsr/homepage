@@ -17,7 +17,9 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #415161;
+    background-image: url(../assets/gold_tram_blur.jpg);
+    background-size: cover;
+    background-position: bottom;
   }
   .line {
     width: 100vw;
@@ -41,8 +43,8 @@
     transform: translate(25vw);
   }
   .wrap {
-    transform: translate(0vw, -20vh);
-    margin-right: 5vw;
+    transform: translate(0vw, -28vh);
+    margin-right: 12vw;
   }
   span {
     display: inline-block;
@@ -56,15 +58,15 @@
   .iconsContainer {
     display: flex;
     position: absolute;
-    bottom: 6vw;
-    left: 3vw;
+    bottom: 4vw;
+    left: 0vw;
     width: 20vw;
-    height: 3vw;
+    height: 4vw;
   }
   svg {
-    width: 3vw;
-    height: 3vw;
-    margin: 3vw;
+    width: 3.75vw;
+    height: 3.75vw;
+    margin: 1.5vw;
   }
 }
 
