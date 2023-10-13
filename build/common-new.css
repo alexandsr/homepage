@@ -1,0 +1,60 @@
+
+body * {
+  z-index: 0;
+}
+
+svg {
+  margin: 2vw;
+  color: #415161;
+  transition: ease-out 0.2s;
+  filter: drop-shadow(0 1px 0px #2f3a46) drop-shadow(0 1.5px 0px #2a353f ) drop-shadow(0 2px 0px #263039 ) drop-shadow(0 2.5px 0px #222b33  ) drop-shadow(0 3px 0px #1e262d   ) drop-shadow(0 3px 0px #1a2127  )  drop-shadow(0 3px 0px #161b21  ) drop-shadow(0 3px 0px #12161b   )  drop-shadow(0 5px 5px rgba(45, 56, 66, 0.1));
+}
+
+svg:hover {
+  color: #586D82;
+}
+
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+}
+
+#whiteOverlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  opacity: 0;
+  z-index: 50;
+  transition: ease-in-out 0.3s;
+}
+
+#copiedText {
+  position: relative;
+  left: -100vw;
+  z-index: 51;
+  top: 40%;
+  color: #efefef;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 10vh;
+  transition: ease-out 0.25s;
+}
+
+#overlay > * {
+  pointer-events: none;
+}
+
+#email {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=common.css.map */

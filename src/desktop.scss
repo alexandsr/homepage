@@ -53,7 +53,7 @@
       }
       text-shadow: $value;
   }
-  $primarycolour: #fff;
+  $primarycolour: #415161;
 
     body {
         height: 100vh;
@@ -61,7 +61,7 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        background-color: #fff;
+        background-color: #415161;
       }
       .line {
         width: 100vw;
@@ -71,7 +71,7 @@
         display: inline-block;
       }
       .right {
-        color: #fff;
+        color: #415161;
         transform: skew(0deg, 22deg);
         @include text3d(
           adjust-color($primarycolour, $lightness: -8%), 
